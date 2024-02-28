@@ -20,18 +20,14 @@ namespace CA1OO
             // Basic Journey information - details of the route
 
            int[] minsToFinalDestination = { 40, 30, 20, 15, 10, 0 }; // travel time to the final destination in minutes.
-           string[] destinations = { "Ballyshannon", "Bundoran", "Cliffoney", "Grange", "Rathcormack", "Sligo" }; // stops on the route.
-
-            //Details of the basic price for a single ticket to the destination
-
-           decimal basePrice = 10m;
-
-            // details about the bus
-
-           int seatsOnBus = 10;
+           string[] destinations = { "Ballyshannon", "Bundoran", "Cliffoney", "Grange", "Rathcormack", "Sligo" }; // stops on the route.           
+           decimal basePrice = 10m; //Details of the basic price for a single ticket to the destination  
+           int seatsOnBus = 10; // details about the bus
 
 
-            Journey j = new Journey(destinations, minsToFinalDestination, false, 10, 10);
+            // Create a new  journey object for this particular route and pricing structure - note that we could have several of these...
+
+            Journey j = new Journey(destinations, minsToFinalDestination, false, basePrice,seatsOnBus);
 
 
             do
