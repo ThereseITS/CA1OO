@@ -41,7 +41,7 @@ namespace CA1OO
                         string ticketType = ticketMenu[GetMenuOption("Please enter ticket type: ", ticketMenu)];
                         string customerType = customerMenu[GetMenuOption("Please enter customer type", customerMenu)];
                         decimal price = j.BuyTicket(origin, destination,ticketType,customerType);
-                        if (price > 0)
+                        if (price >= 0)
                         {
                             Console.WriteLine($" {customerType} {ticketType} from {origin} to {destination} :{price:C}");
                         }

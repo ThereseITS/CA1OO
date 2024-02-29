@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CA1OO
 {
+    // This is a first rough cut of the functionality of the code into classes. This class is still not that cohesive, but it enables some more code re-use.
     internal class Journey
     {
        
